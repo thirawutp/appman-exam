@@ -10,22 +10,7 @@ $ git clone https://github.com/thirawutp/react-exam.git
 $ npm install
 ```
 
-## I. JS & Unit Test
-
-โดยการ Run คำสั่ง
-
-```
-$ npm run test 
-```
-
-จะต้องได้ผลลัพท์ดังนี้ 
-
-เปิดไฟล์ /utils/index.js เพื่อทำการเขียน function 
-
-![](screenshots/pass-test.png)
-
-
-## II.  ออกแบบ UI และ Layout
+## I.  ออกแบบ UI และ Layout
 
 ![](screenshots/ui-layout.gif)
 
@@ -47,7 +32,7 @@ $ npm run test
   - สีพื้นหลัง ghostwhite    
 
 
-## III. UI Component & Service
+## II. UI Component & Service
 
 Run คำสั่ง 
 
@@ -86,18 +71,33 @@ $ npm run server
 ![](screenshots/login-error.png)
 
 
+## III. JS & Unit Test
+
+โดยการ Run คำสั่ง
+
+```
+$ npm run test 
+```
+
+จะต้องได้ผลลัพท์ดังนี้ 
+
+เปิดไฟล์ /utils/index.js เพื่อทำการเขียน function 
+
+![](screenshots/pass-test.png)
+
+
 ## หลักการประเมิน (100 คะแนน)
 
-1. JS & Unit Test
-- Pass 5 cases (15 คะแนน)
-- Logic (15 คะแนน)
-- Code style (10 คะแนน)
-
-2. ออกแบบ UI & Layout
+1. ออกแบบ UI & Layout
 - วิธีการ render html และการ manipulate DOM (10 คะแนน)
 - ความถูกต้องตามโจทย์ (15 คะแนน)
 - การเขียน style CSS (5 คะแนน)
 
-3. UI Component & Service
+2. UI Component & Service
 - การใช้งาน react component, state, props (20 คะแนน)
 - การเรียกใช้ service และการ handle (10 คะแนน)
+
+3. JS & Unit Test
+- Pass 5 cases (15 คะแนน)
+- Logic (15 คะแนน)
+- Code style (10 คะแนน)

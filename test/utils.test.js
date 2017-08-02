@@ -11,45 +11,6 @@ const store = [
     }
 ];
 
-describe('remove score by student and subject', () => {
-    test('should be remove correct', () => {
-        const result = removeStudentScoreBySubject(store, { name: 'luffy', subject: 'math' });
-
-        const expected = [
-            {
-                subject: 'math',
-                students: [{ name: 'zoro', score: 15 }]
-            },
-            {
-                subject: 'science',
-                students: [{ name: 'luffy', score: 15 }, { name: 'zoro', score: 25 }]
-            }
-        ];
-
-        expect(result).toEqual(expected);
-    });
-});
-
-describe('transform data by student', () => {
-    test('should be transform correctly', () => {
-        const result = transformData(store);
-        const expected = [
-            {
-                name: 'luffy',
-                math: 10,
-                science: 15
-            },
-            {
-                name: 'zoro',
-                math: 15,
-                science: 25
-            }
-        ];
-
-        expect(result).toEqual(expected);
-    });
-});
-
 describe('update new student score', () => {
     test('should be update new student correctly', () => {
         const result = updateStudentScore(store, {
@@ -124,6 +85,45 @@ describe('update new student score', () => {
             {
                 subject: 'science',
                 students: [{ name: 'luffy', score: 60 }, { name: 'zoro', score: 25 }]
+            }
+        ];
+
+        expect(result).toEqual(expected);
+    });
+});
+
+describe('remove score by student and subject', () => {
+    test('should be remove correct', () => {
+        const result = removeStudentScoreBySubject(store, { name: 'luffy', subject: 'math' });
+
+        const expected = [
+            {
+                subject: 'math',
+                students: [{ name: 'zoro', score: 15 }]
+            },
+            {
+                subject: 'science',
+                students: [{ name: 'luffy', score: 15 }, { name: 'zoro', score: 25 }]
+            }
+        ];
+
+        expect(result).toEqual(expected);
+    });
+});
+
+describe('transform data by student', () => {
+    test('should be transform correctly', () => {
+        const result = transformData(store);
+        const expected = [
+            {
+                name: 'luffy',
+                math: 10,
+                science: 15
+            },
+            {
+                name: 'zoro',
+                math: 15,
+                science: 25
             }
         ];
 
