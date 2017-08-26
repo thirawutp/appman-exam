@@ -4,19 +4,34 @@
     <meta charset="utf-8">
     <title>Appman React Exam</title>
     <link rel="stylesheet" type="text/css" href="../web/styles/index.css" />
+    <script type="text/javascript" src="../web/jquery-3.1.0.min.js" ></script>
+    <script type="text/javascript" src="../web/main.js" ></script>
+
+    <script type="text/javascript" >
+    function submitData(){
+        let usr = $("#txtEml").val();
+        let pwd = $("#txtPwd").val();
+        let lbl = "#lblWarn";
+
+        login(usr,pwd,lbl);
+    }
+    </script>
+
 </header>
 
 <body>
     <div id='app'>
         <div class="loginBox" >
-            <div class="aCenter" ><img src="https://upload.wikimedia.org/wikipedia/en/a/a7/React-icon.svg" style="width:180px;" /></div>
+            <div class="aCenter" ><img id="logo" src="https://upload.wikimedia.org/wikipedia/en/a/a7/React-icon.svg" style="width:180px;" /></div>
             <div class="formWrap" >
                 <div>E-mail address</div>
-                <div><input type="email" placeholder="example@appman.co.th" class="inputLogin"  /></div>
+                <div><input id="txtEml" type="email" placeholder="example@appman.co.th" class="inputLogin"  /></div>
                 <div style="padding-top:10px;" >Password</div>
-                <div><input type="password" placeholder="your password..." class="inputLogin" ></div>
+                <div><input id="txtPwd" type="password" placeholder="your password..." class="inputLogin" ></div>
+                <div style="padding-top:10px;" ><label id="lblWarn" ></label></div>
             </div>
-            <div class="aCenter" ><input type="button" value="SIGN IN" class="bt"  /></div>
+            
+            <div class="aCenter" ><input type="button" value="SIGN IN" class="bt" onclick="submitData()"  /></div>
             <div style="padding-top:20px;" >
                 <div class="left" ><a href="#" >Forget Password ?</a></div>
                 <div class="right" ><a href="#">Create new account</a></div>
