@@ -40,7 +40,7 @@ Run คำสั่ง
 $ npm run server
 ```
 
-แก้ไข Code ในข้อ 2 โดยทำการยิง Request ไปที่
+แก้ไข Code ในข้อ 1 โดยทำการยิง Request ไปที่
 
  [POST] http://localhost:3000/api/login 
 
