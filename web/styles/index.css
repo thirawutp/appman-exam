@@ -1,0 +1,115 @@
+.logo-spin {
+    animation: App-logo-spin infinite 3s linear;
+    animation-play-state: running;
+}
+
+.logo-spin.stop{
+    animation-play-state: paused;
+}
+
+.logo-spin.run{
+    animation-play-state: running;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+html,body{
+    background: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.loginBox{
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0px auto;
+    background: ghostwhite;
+}
+
+.aCenter{
+    text-align: center;
+}
+
+.formWrap{
+    width: 90%;
+    padding: 20px;
+    color: #666;
+}
+
+.formWrap input{
+    font-size: 0.9em;
+}
+
+a{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: deepskyblue;
+}
+
+.inputLogin{
+    width: 100%;
+    padding: 20px;
+
+    border:1px solid #ccc;
+
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.inputLogin:focus{
+    border: 1px solid #242526;
+}
+
+.bt{
+    background: deepskyblue;
+    color: ghostwhite;
+    font-size: 0.9em;
+    padding: 20px 40px;
+
+    border: 0px;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    border-radius: 5em;
+    cursor: pointer;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}
