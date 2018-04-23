@@ -1,10 +1,19 @@
-import React from 'react';
+import React from 'react'
+
+import withLoginFormState from './containers/withLoginFormState'
+import LoginDialog from './components/LoginDialog'
+
+const LoginDialogWithFormState = withLoginFormState(LoginDialog)
 
 class App extends React.Component {
-    render() {
-        // start your code here
-        return <h1>hello world</h1>;
-    }
+  render () {
+    // start your code here
+    return (
+      <div className='app-container child-center'>
+        <LoginDialogWithFormState />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
