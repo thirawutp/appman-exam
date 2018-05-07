@@ -1,0 +1,34 @@
+.whiteFrame {
+    width: 740px;
+    margin: 0 auto;
+    background-color: ghostwhite;
+}
+
+.logo {
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+}
+
+.text-input {
+    width: 90%;
+    border-radius: 1rem;
+    display: block;
+    height: 40px;
+    outline: none;
+    border-style: none;
+    border: 2px solid grey;
+}
+
+.text-input:focus {
+    border-color:#242526;
+}
+
+.button-link {
+    color: deepskyblue;
+}
+
+.error {
+    color: red;
+}
+
